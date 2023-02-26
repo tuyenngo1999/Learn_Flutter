@@ -31,7 +31,7 @@ void main() {
       child: Text(
           myCar.toString(),
           style: const TextStyle(fontSize: 30),
-          textDirection: TextDirection.ltr)
+          textDirection: TextDirection.ltr),
     ),
   );
 }
