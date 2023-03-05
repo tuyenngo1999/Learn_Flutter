@@ -16,5 +16,4 @@ class MyApp  extends StatelessWidget
           textDirection: TextDirection.ltr),
     );
   }
-
 }
