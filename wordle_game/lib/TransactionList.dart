@@ -34,7 +34,7 @@ class TransactionList extends StatelessWidget {
                     ),
                     const Padding(padding: EdgeInsets.only(bottom: 5)),
                     Text(
-                      '１ : ${DateFormat.y().format(transactions[index].createdDate)}',
+                      'CreatDate : ${DateFormat.yMd().format(transactions[index].createdDate)}',
                       style: const TextStyle(fontSize: 18, color: Colors.white),
                     ),
                     const Padding(padding: EdgeInsets.only(bottom: 10)),
