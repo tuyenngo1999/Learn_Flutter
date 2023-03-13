@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wordle_game/foods_page.dart';
 import 'category_page.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main()
 {
@@ -16,8 +15,8 @@ class MyApp extends StatelessWidget
       title: 'Food App With navigation',
       initialRoute: '/',
       routes: {
-        '/FoodsPage':(context) => FoodsPage(),
-        '/CategoriesPage' : (context) => CategoryPage()
+        FoodsPage.routeName:(context) => FoodsPage(),
+        CategoryPage.routeName : (context) => CategoryPage()
       },
       theme:  ThemeData(
         primaryColor: Colors.blue,
@@ -25,9 +24,7 @@ class MyApp extends StatelessWidget
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title:  Text('Food \'s categories',
-          style: GoogleFonts.pacifico(),
-          ),
+          title:  const Text('Food \'s categories'),
         ),
         body: SafeArea(child:CategoryPage()),
       ),
